@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "jk5CIN8PQOkaJ0XAs5DaQcZcIdZGGsguqgZt2Csq4B-TLiun0jDTNnouxesUxAjvTuo"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["denasx-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://denasx-production.up.railway.app"]
