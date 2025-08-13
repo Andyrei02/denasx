@@ -26,7 +26,7 @@ SECRET_KEY = "jk5CIN8PQOkaJ0XAs5DaQcZcIdZGGsguqgZt2Csq4B-TLiun0jDTNnouxesUxAjvTu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["denasx-production.up.railway.app"]#["denasx-production.up.railway.app", "denasx-production.up.railway.app"]
+ALLOWED_HOSTS = ["denasx-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https:denasx-production.up.railway.app"]
 
 
