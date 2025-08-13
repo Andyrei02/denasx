@@ -27,7 +27,7 @@ SECRET_KEY = "jk5CIN8PQOkaJ0XAs5DaQcZcIdZGGsguqgZt2Csq4B-TLiun0jDTNnouxesUxAjvTu
 DEBUG = True
 
 ALLOWED_HOSTS = ["denasx-production.up.railway.app"]
-CSRF_TRUSTED_ORIGINS = ["https:denasx-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://denasx-production.up.railway.app"]
 
 
 # Application definition
