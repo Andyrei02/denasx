@@ -53,6 +53,7 @@ SECRET_KEY=your_secret_key
 DEBUG=True
 DATABASE_URL=sqlite:///db.sqlite3
 ALLOWED_HOSTS=localhost,127.0.0.1
+CSRF_TRUSTED_ORIGINS=https://127.0.0.1
 ```
 
 ## 🖋️ Admin Panel Usage
