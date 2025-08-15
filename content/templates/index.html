@@ -1,103 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DENASX</title>
+{% extends "base.html" %}
+{% block title %}DENASX{% endblock %}
 
-<meta property="og:title" content="DENASX.">
-<meta property="og:description" content="Создаю душевные риффы и мелодии, отточенные до гармонии, пока каждая песня не покажется живой.">
-<meta property="og:image" content="https://dencenpage-production.up.railway.app/assets/img/preview_link.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://dencenpage-production.up.railway.app/">
-<meta property="og:type" content="website">
 
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
-<body>
-{% if content %}
+{% block content %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
-<!-- HEADER -->
-<header>
-<div class="card">
-  <div class="header">
-    <div class="left-section section">
-      <h1>DENASX</h1>
-      <span class="subtitle">@d.en_c.en_</span>
-    </div>
-
-    <div class="right-section section">
-      <div class="animation">
-        <img src="{{ content.gif.url }}"></img>
-        <a class="play-btn" href="https://open.spotify.com/track/5YLUzvGHLrYZQSiwtvuNyg?si=786f77ae540c4724" target="_blank">
-          <div>▶</div>
-        </a>
-      </div>
-      <p>{{ content.comment }}</p>
-    </div>
-  </div>
-    
-    
-  <div class="buttons">
-    <a class="fab fa-spotify fa-2x" href="https://open.spotify.com/artist/5t96SIR1UZeLwPMFjY7UoH?si=xbXgFXO1QzGQl0CoXwSPTw" target="_blank"><span>Visit Spotify</span></a>
-    <a class="fab fa-instagram fa-2x" href="https://www.instagram.com/d.en_c.en_/" target="_blank"><span>Visit Instagram</span></a>
-  </div>
-</div>
-</header>
-
-<!-- CONTENT -->
-<div class="content-section section">
-  <div class="media-container">
-    <img src="{{ content.cover_image.url }}" alt="Preview">
-    <a href="{{ content.video_link }}" target="_blank" class="video-link">↗</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <!-- Contributors -->
-    <div class="footer-section contributors">
-      <h3>Contributors</h3>
-      <ul>
-        <li><strong>Denis Cenusa</strong> – Guitarist, Producer</li>
-        <li><a href="https://www.instagram.com/e.k.luna_/#"><strong>Екатерина Жиленко</strong> – Lyricist</a></li>
-      </ul>
-    </div>
-
-    <!-- Follow Us -->
-    <div class="footer-section follow">
-      <h3>Follow Us</h3>
-      <div class="social-links">
-        <div class="icon">
-          <a class="fab fa-instagram fa-2x" href="https://www.instagram.com/d.en_c.en_/"></a>
+  {% if content %}
+    <!-- HEADER -->
+    <header>
+    <div class="card">
+      <div class="header">
+        <div class="left-section section">
+          <h1>DENASX</h1>
+          <span class="subtitle">@d.en_c.en_</span>
         </div>
-        <div class="icon">
-          <a class="fab fa-spotify fa-2x" href="https://open.spotify.com/artist/5t96SIR1UZeLwPMFjY7UoH?si=xbXgFXO1QzGQl0CoXwSPTw"></a>
-        </div>
-        <div class="icon">
-          <a class="fab fa-youtube fa-2x" href="https://www.youtube.com/@0.dencen?si=84_q6j6XihTNA-ya&fbclid=PAZXh0bgNhZW0CMTEAAaaf-vASUGAXASg_bGuYvbgLkL901CME9jRjFDYmuGsp700BpDs15Ats9lA_aem_jUkktcp3VMsHd2mPIPFaJw"></a>
-        </div>
-        <div class="icon">
-          <a class="fab fa-telegram fa-2x" href="https://t.me/Den_Cen"></a>
+
+        <div class="right-section section">
+          <div class="animation">
+            <img src="{{ content.gif.url }}"></img>
+            <a class="play-btn" href="https://open.spotify.com/track/5YLUzvGHLrYZQSiwtvuNyg?si=786f77ae540c4724" target="_blank">
+              <div>▶</div>
+            </a>
+          </div>
+          <p>{{ content.comment }}</p>
         </div>
       </div>
+        
+      <div class="buttons">
+        <a class="fab fa-spotify fa-2x" href="https://open.spotify.com/artist/5t96SIR1UZeLwPMFjY7UoH?si=xbXgFXO1QzGQl0CoXwSPTw" target="_blank"><span>Visit Spotify</span></a>
+        <a class="fab fa-instagram fa-2x" href="https://www.instagram.com/d.en_c.en_/" target="_blank"><span>Visit Instagram</span></a>
+      </div>
     </div>
-  </div>
+    </header>
 
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>
-      © 2025 Denis Cenusa. Site by Andrei Cenusa.
-      <a href="{% url 'license_page' %}">All rights reserved.</a>
-    </p>
-  </div>
-</footer>
 
-{% endif %}
-</body>
-</html>
+
+    <!-- CONTENT -->
+    <div class="content-section section">
+      <div class="media-container">
+        <img src="{{ content.cover_image.url }}" alt="Preview">
+        <a href="{{ content.video_link }}" target="_blank" class="video-link">↗</a>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    {% include 'footer.html' %}
+
+  {% endif %}
+{% endblock %}

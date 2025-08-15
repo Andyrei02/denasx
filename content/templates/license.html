@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>License & Legal Information</title>
-    {% load static %}
+{% extends "base.html" %}
+{% block title %}License & Legal Information{% endblock %}
 
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-        h1, h2 { margin-top: 1em; }
-        pre { background: #f5f5f5; padding: 1em; overflow-x: auto; }
-    </style>
-</head>
-<body>
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/license.css' %}">
+
+
     <h1>License & Legal Information</h1>
     <p>This website contains two distinct types of intellectual property:</p>
 
@@ -61,5 +54,8 @@ Adapt or remix the original music or visuals without explicit written permission
     <p>You can use this project's <strong>structure</strong> to build your own portfolio, but all actual <strong>creative works</strong> in this repository remain the intellectual property of Denis Cenusa.</p>
 
     <p><a href="/">← Back to Home</a></p>
-</body>
-</html>
+
+
+    <!-- FOOTER -->
+    {% include 'footer.html' %}
+{% endblock %}
