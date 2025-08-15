@@ -78,5 +78,5 @@ railway up
 ```
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+- **Code:** [MIT License](LICENSE)
+- **Content:** [Content License](CONTENT_LICENSE.md) — all music & visuals © Denis Cenusa.
