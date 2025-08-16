@@ -75,26 +75,9 @@
     display: flex;
     margin-top: 30px;
 }
-.buttons a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border: 2px solid #000;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin-right: 10px;
-    font-size: 40px;
-    color: black;
-    transition: all 0.3s ease;
-}
 .buttons a span{
     margin-left: 10px;
     font-size: 20px;
-}
-.buttons a:hover {
-  background: #000;
-  color: #fff;
-  transform: translateY(-2px);
 }
 
 
@@ -142,7 +125,7 @@
 
 /* For mobile */
 @media screen and (max-width: 428px) {
-    .card .buttons a span{
+    .card .button span{
         display: none;
     }
 }
